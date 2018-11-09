@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.ListaOpereController">
+   <left>
+      <ListView fx:id="list" prefHeight="406.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <ImageView fx:id="selectedImage" fitHeight="243.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Button fx:id="download" mnemonicParsing="false" onAction="#download" prefHeight="25.0" prefWidth="129.0" text="Download" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Button fx:id="homepage" mnemonicParsing="false" onAction="#goHomepage" text="Back to Homepage" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

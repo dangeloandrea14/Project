@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.HomepageController">
+   <children>
+      <Button fx:id="gestioneassegnazione" defaultButton="true" layoutX="435.0" layoutY="454.0" minHeight="25.0" mnemonicParsing="false" onAction="#gestioneAssegnazione" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #3b3131;" text="Gestione Assegnazioni" textFill="WHITE" visible="false" />
+      <TextField fx:id="searchBar" layoutX="210.0" layoutY="306.0" prefWidth="251.0" promptText="Cerca..." />
+      <Button fx:id="search" layoutX="485.0" layoutY="303.0" mnemonicParsing="false" onAction="#search" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #3b3131;" text="Cerca" textFill="WHITE" />
+      <RadioButton fx:id="searchByAuthor" layoutX="246.0" layoutY="357.0" mnemonicParsing="false" text="Autore" />
+      <RadioButton fx:id="searchByName" layoutX="381.0" layoutY="357.0" mnemonicParsing="false" text="Nome Opera" />
+      <Button fx:id="back" layoutX="47.0" layoutY="613.0" mnemonicParsing="false" onAction="#loginpage" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #3b3131;" text="Login" textFill="WHITE" />
+      <Button fx:id="revupload" defaultButton="true" layoutX="67.0" layoutY="454.0" minHeight="25.0" mnemonicParsing="false" onAction="#revisioneupload" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #3b3131;" text="Revisione Upload" textFill="WHITE" visible="false" />
+      <Label layoutX="107.0" layoutY="251.0" prefHeight="30.0" prefWidth="251.0" text="Ricerca delle Opere:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" collapsible="false" layoutX="709.0" layoutY="193.0" prefHeight="365.0" prefWidth="216.0" text="                      Lista Opere">
+         <content>
+            <ListView fx:id="listView" prefHeight="226.0" prefWidth="214.0" />
+         </content>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TitledPane>
+      <ImageView fitHeight="85.0" fitWidth="295.0" layoutX="62.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/univaq_logo_0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="396.0" layoutY="49.0" prefHeight="50.0" prefWidth="345.0" text="Interfaccia Principale">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="77.0" fitWidth="292.0" layoutX="73.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/libreria.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="44.0" layoutY="143.0" prefHeight="50.0" prefWidth="650.0" text="QUELLA IN CUI STATE NAVIGANDO  E' LA HOMEPAGE DELL'APPLICAZIONE CREATA PER POTER RACCOGLIERE TUTTI I TESTI E GLI STUDI CHE CONTRIBUISCONO&#10; ALLA FORMAZIONE DELLA CULTURA ALL'INTERNO DELL'UNIVERSITA' DEGLI STUDI DE L'AQUILA. &#10;">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="165.0" fitWidth="120.0" layoutX="824.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/363633-200.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="824.0" layoutY="22.0" prefHeight="30.0" prefWidth="131.0" text="    Vai al Profilo...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectImage" layoutX="779.0" layoutY="613.0" mnemonicParsing="false" onAction="#selectImage" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #3b3131;" text="Scegli l'immagine" textFill="WHITE" visible="false" />
+      <TextField fx:id="workName" layoutX="353.0" layoutY="616.0" prefHeight="25.0" prefWidth="192.0" promptText="Nome dell'opera della pagina" visible="false" />
+      <TextField fx:id="numPage" layoutX="593.0" layoutY="616.0" promptText="Numero della pagina" visible="false" />
+      <Label layoutX="47.0" layoutY="193.0" prefHeight="57.0" prefWidth="457.0" text="Per effettuare una ricerca bisogna inserire correttamente il nome dell'opera o il nome dell'autore che state&#10; cercando e selezionare la corrispondente icona per abilitare il metodo di ricerca da usare, a seconda del metodo  &#10;scelto vi verranno presentate interfacce diverse.&#10;">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <Label fx:id="uploadlabel1" layoutX="355.0" layoutY="596.0" text="Nome Opera:" visible="false" />
+      <Label fx:id="uploadlabel2" layoutX="593.0" layoutY="596.0" text="N° Pagina:" visible="false" />
+      <Label fx:id="uploadlabel" layoutX="351.0" layoutY="559.0" prefHeight="26.0" prefWidth="216.0" text="Upload Pagine Opera:" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelcandidatura" layoutX="68.0" layoutY="540.0" prefHeight="58.0" prefWidth="282.0" text=" NOTA: Per effettuare la candidatura a Trascrittore&#10;bisogna andare nel profilo e cliccare il tasto&#10;corrispondente.&#10;&#10;" visible="false">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="364.0" prefHeight="80.0" prefWidth="240.0" text="La ricerca per Nome Opera vi condurrà ad &#10;un vista sull'opera e alla pagina corrispondente&#10;selezionata.&#10;&#10;">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="375.0" prefHeight="58.0" prefWidth="169.0" text="La ricerca per Autore vi condurrà ad &#10;una lista di opere con l'autore scelto.&#10;">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <Button fx:id="interfacciacandidatura" layoutX="253.0" layoutY="503.0" mnemonicParsing="false" onAction="#interfacciacandidatura" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #3b3131;" text="Interfaccia Candidature" textFill="WHITE" visible="false" />
+      <Button fx:id="profile" layoutX="817.0" layoutY="22.0" mnemonicParsing="false" onAction="#profile" opacity="0.0" prefHeight="140.0" prefWidth="131.0" style="-fx-background-color: WHITE;" text="profile" textFill="#992424" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="928.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.HomepageController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="87.0" prefWidth="900.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FlowPane hgap="15.0" layoutX="73.0" layoutY="25.0" prefHeight="52.0" prefWidth="819.0" vgap="10.0">
+               <children>
+                  <TextField fx:id="searchBar" alignment="CENTER" prefHeight="25.0" prefWidth="205.0" promptText="Cerca un'opera" />
+                  <Button fx:id="search" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #000000;" text="Cerca" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="upload" mnemonicParsing="false" onAction="#upload" style="-fx-background-color: #000000;" text="Upload" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="manage" mnemonicParsing="false" onAction="#manage" style="-fx-background-color: #000000;" text="Manage" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label prefHeight="17.0" prefWidth="271.0" />
+                  <Button fx:id="profile" mnemonicParsing="false" onAction="#profile" text="Profilo" />
+                  <RadioButton fx:id="searchByAuthor" mnemonicParsing="false" text="Autore" textFill="WHITE" />
+                  <RadioButton fx:id="searchByName" mnemonicParsing="false" text="Nome Opera" textFill="WHITE" />
+               </children>
+            </FlowPane>
+         </children>
+      </Pane>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="138.0" prefHeight="405.0" prefWidth="211.0" />
+      <Label fx:id="description" layoutX="436.0" layoutY="283.0" prefHeight="87.0" prefWidth="222.0" text="Nothing " />
+   </children>
+</AnchorPane>

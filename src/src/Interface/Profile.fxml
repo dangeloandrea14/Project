@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="481.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.ProfileController">
+   <children>
+      <VBox layoutX="100.0" layoutY="118.0" prefHeight="190.0" prefWidth="102.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="181.0" text="Nome:" />
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="80.0" prefHeight="35.0" prefWidth="181.0" text="Email:" />
+            <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="181.0" text="Password:" />
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="150.0" prefHeight="35.0" prefWidth="181.0" text="Professione:" />
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="185.0" prefHeight="35.0" prefWidth="181.0" text="Titolo di Studio:" />
+         </children>
+      </VBox>
+      <VBox layoutX="228.0" layoutY="118.0" prefHeight="190.0" prefWidth="181.0">
+         <children>
+            <Label fx:id="name" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="181.0" />
+            <Label fx:id="email" layoutX="10.0" layoutY="80.0" prefHeight="35.0" prefWidth="181.0" />
+            <Label fx:id="password" prefHeight="35.0" prefWidth="181.0" />
+            <Label fx:id="profession" layoutX="10.0" layoutY="150.0" prefHeight="35.0" prefWidth="181.0" />
+            <Label fx:id="qualification" layoutX="10.0" layoutY="185.0" prefHeight="35.0" prefWidth="181.0" />
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="345.0" layoutY="341.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #3b3131;" text="Torna Indietro" textFill="WHITE" />
+      <Button fx:id="transcriber" layoutX="182.0" layoutY="341.0" mnemonicParsing="false" onAction="#transcriber" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: #3b3131;" text="Trascrivi" textFill="WHITE" visible="false" />
+      <Button fx:id="adminUI" layoutX="20.0" layoutY="341.0" mnemonicParsing="false" onAction="#Adminpage" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: #3b3131;" text="Interfaccia Admin" textFill="WHITE" visible="false" />
+      <ImageView fitHeight="93.0" fitWidth="200.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/univaq_logo_0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="181.0" layoutY="25.0" prefHeight="50.0" prefWidth="239.0" text="Gestione Profilo">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="73.0" prefHeight="55.0" prefWidth="274.0" text="Informazioni riguardanti il tuo profilo:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="53.0" layoutX="400.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/112829-200.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

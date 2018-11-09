@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.RegistrationController">
+   <children>
+      <VBox layoutX="157.0" layoutY="111.0" prefHeight="195.0" prefWidth="287.0" spacing="15.0">
+         <children>
+            <TextField fx:id="email" prefHeight="27.0" prefWidth="287.0" promptText="Email" />
+            <TextField fx:id="password" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="287.0" promptText="Password" />
+            <TextField fx:id="name" layoutX="10.0" layoutY="37.0" prefHeight="27.0" prefWidth="287.0" promptText="Nome" />
+            <TextField fx:id="qualification" layoutX="10.0" layoutY="64.0" prefHeight="27.0" prefWidth="287.0" promptText="Titolo di studio" />
+            <TextField fx:id="profession" layoutX="10.0" layoutY="91.0" prefHeight="27.0" prefWidth="287.0" promptText="Professione" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="222.0" layoutY="30.0" prefHeight="44.0" prefWidth="157.0" text="Registra il tuo account" />
+      <Button fx:id="back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="96.0" text="Indietro" />
+      <Button fx:id="register" layoutX="252.0" layoutY="340.0" mnemonicParsing="false" onAction="#register" prefHeight="33.0" prefWidth="96.0" text="Registrati" />
+   </children>
+</AnchorPane>

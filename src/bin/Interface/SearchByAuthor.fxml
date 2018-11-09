@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="620.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.SearchByAuthorController">
+   <children>
+      <Button fx:id="back" layoutX="467.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #3b3131;" text="Indietro" textFill="WHITE" />
+      <Label layoutX="316.0" layoutY="177.0" prefHeight="77.0" prefWidth="254.0" text="NOTA: SE LA LISTA DELLE OPERE RISULTA VUOTA &#10;VUOL DIRE CHE NON SONO STATE ANCORA PUBBLICATE &#10;DELLE OPERE O CHE LA RICERCA CHE  CON NOME CHE &#10;AVETE EFFEUTTUATO NON HA RISCONTRATO NESSUN RISULTATO&#10;NEL NOSTRO DATABASE.&#10;&#10;">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="77.0" fitWidth="292.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/univaq_logo_0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="264.0" layoutY="33.0" prefHeight="50.0" prefWidth="333.0" text="Ricerca tramite Autore">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" collapsible="false" layoutX="76.0" layoutY="114.0" prefHeight="255.0" prefWidth="200.0" text="Risultati ricerca">
+         <content>
+            <ListView fx:id="resultList" prefHeight="255.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

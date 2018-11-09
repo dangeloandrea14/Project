@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.AdminController">
+   <children>
+      <Separator layoutX="674.0" layoutY="113.0" orientation="VERTICAL" prefHeight="576.0" prefWidth="32.0" />
+      <TextField fx:id="ruolo" layoutX="458.0" layoutY="614.0" promptText="inserisci N° Ruolo..." />
+      <TextField fx:id="lvt" layoutX="458.0" layoutY="469.0" promptText="inserisci Lv Trascrittore" />
+      <Button fx:id="changetranscriber" layoutX="273.0" layoutY="466.0" mnemonicParsing="false" onAction="#changelvtranscriber" prefHeight="32.0" style="-fx-background-color: #3b3131;" text="Cambia Livello" textFill="WHITE" />
+      <Button fx:id="back" layoutX="771.0" layoutY="705.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #3b3131;" text="Pagina Accesso" textFill="WHITE" />
+      <Label layoutX="770.0" layoutY="157.0" text="Elenco Ruoli:" />
+      <Button fx:id="changerole" layoutX="272.0" layoutY="611.0" mnemonicParsing="false" onAction="#changerole" prefHeight="32.0" style="-fx-background-color: #3b3131;" text="Cambia Ruolo " textFill="WHITE" />
+      <TextField fx:id="utente" layoutX="58.0" layoutY="538.0" promptText="inserisci ID profilo..." />
+      <ImageView fitHeight="77.0" fitWidth="292.0" layoutX="37.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageFolder/Images%20Interface/univaq_logo_0.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="dbtable" layoutX="45.0" layoutY="119.0" prefHeight="282.0" prefWidth="590.0" style="-fx-background-color: white;" />
+      <Button fx:id="homepage" layoutX="780.0" layoutY="598.0" mnemonicParsing="false" onAction="#homepage" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #3b3131;" text="Homepage" textFill="WHITE" />
+      <VBox layoutX="737.0" layoutY="189.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="ruolo1" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="176.0" text="Utente N° 1" />
+            <Button fx:id="ruolo2" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="157.0" text="Uploader N° 2" />
+            <Button fx:id="ruolo3" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="198.0" text="RevisoreUpload n° 3" />
+            <Button fx:id="ruolo4" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="235.0" text="Trascrittore N° 4" />
+            <Button fx:id="ruolo5" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="234.0" text="Revisore Trascrizioni N° 5" />
+            <Button fx:id="ruolo6" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="177.0" text="Capo Trascrittore N° 6" />
+            <Button fx:id="ruolo7" mnemonicParsing="false" onAction="#elencoruoli" prefHeight="26.0" prefWidth="151.0" text="Amministratore N° 7" />
+         </children>
+      </VBox>
+      <Button fx:id="cd1" layoutX="255.0" layoutY="535.0" mnemonicParsing="false" onAction="#canDownload" prefHeight="32.0" style="-fx-background-color: #3b3131;" text="Permetti Downlaod 1" textFill="WHITE" />
+      <Button fx:id="cd0" layoutX="455.0" layoutY="535.0" mnemonicParsing="false" onAction="#canDownload" prefHeight="32.0" style="-fx-background-color: #3b3131;" text="Non Permetti Downlaod 0" textFill="WHITE" />
+      <Button fx:id="profile" layoutX="837.0" layoutY="46.0" mnemonicParsing="false" onAction="#profile" prefHeight="32.0" prefWidth="101.0" style="-fx-background-color: #3b3131;" text="Profile" textFill="WHITE" />
+      <Label layoutX="305.0" layoutY="37.0" text="Interfaccia Amministratore">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="interfacciacandidatura" layoutX="748.0" layoutY="467.0" mnemonicParsing="false" onAction="#interfacciacandidatura" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #3b3131;" text="Interfaccia Candidature" textFill="WHITE" />
+      <Label layoutX="115.0" layoutY="695.0" prefHeight="84.0" prefWidth="445.0" text="NOTA: LA TABELLA IN ALTO MOSTRA UN VISIONE DEL DATABASE DOVE SONO PRESENTI GLI UTENTI ">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="517.0" text="ID Profilo:" />
+      <Label layoutX="460.0" layoutY="592.0" text="N° Ruolo:" />
+      <Label layoutX="460.0" layoutY="448.0" text="Livello Trascrittore:" />
+   </children>
+</AnchorPane>
